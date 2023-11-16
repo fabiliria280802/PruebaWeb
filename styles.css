@@ -319,6 +319,15 @@ html, body{
     height: 100%;
 }
 
+
+/* Estilos para el carrusel */
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 60%;
+      margin: auto;
+  }
+  
+
 /* Footer starts here */
 footer{
     padding: 3rem;
@@ -620,6 +629,9 @@ footer .attribution a:hover{
         width: 85%;
         max-width: 80%;
     }
+
+     /*Styling for carousel*/
+
 }
 
 @media (max-width: 320px){
@@ -694,4 +706,6 @@ footer .attribution a:hover{
     footer nav a img {
         width: 7.5rem;
     }
+
+
 }

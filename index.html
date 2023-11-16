@@ -58,7 +58,7 @@
 
       <div class="right-col">
         <picture>
-          <source media="(max-width: 375px)" srcset="images/mobile/image-transform.jpg">
+          <source media=(max-width: 375px) srcset="images/mobile/image-transform.jpg">
           <img src="images/desktop/image-transform.jpg" alt="transform image">
         </picture>
       </div>
@@ -67,7 +67,7 @@
     <article>
       <div class="right-col">
         <picture>
-          <source media="(min-width: 280px)" srcset="images/mobile/image-stand-out.jpg">
+          <source media=(min-width: 280px) srcset="images/mobile/image-stand-out.jpg">
           <img src="images/desktop/image-stand-out.jpg" alt="stand out imnage">
         </picture>
       </div>
@@ -142,23 +142,33 @@
   </section>
 
   <!-- Picture Gallery starts here -->
-  <div class="gallery">
-    <picture>
-      <source media=(max-width: 375px) srcset="images/mobile/image-gallery-milkbottles.jpg">
-      <img src="images/desktop/image-gallery-milkbottles.jpg" alt="milk bottle">
-    </picture>
-    <picture>
-      <source media="max-width: 375px" srcset="images/mobile/image-gallery-orange.jpg">
-      <img src="images/desktop/image-gallery-orange.jpg" alt="orange">
-    </picture>
-    <picture>
-      <source media="max-width: 375px" srcset="images/mobile/image-gallery-cone.jpg">
-      <img src="images/desktop/image-gallery-cone.jpg" alt="ice cream cone">
-    </picture>
-    <picture>
-      <source media=(max-width: 375px) srcset="images/mobile/image-gallery-sugarcubes.jpg">
-      <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="sugar cubes">
-    </picture>
+  <div class="slider">
+    <div class="slide-track">
+        <div class="slide">
+          <picture>
+            <source media=(max-width: 375px) srcset="images/mobile/image-gallery-milkbottles.jpg">
+            <img src="images/desktop/image-gallery-milkbottles.jpg" alt="milk bottle">
+          </picture>
+        </div>
+        <div class="slide">
+          <picture>
+            <source media=(max-width: 375px) srcset="images/mobile/image-gallery-orange.jpg">
+            <img src="images/desktop/image-gallery-orange.jpg" alt="orange">
+          </picture>
+        </div>
+        <div class="slide">
+          <picture>
+            <source media=(max-width: 375px) srcset="images/mobile/image-gallery-cone.jpg">
+            <img src="images/desktop/image-gallery-cone.jpg" alt="ice cream cone">
+          </picture>
+        </div>
+        <div class="slide">
+          <picture>
+            <source media=(max-width: 375px) srcset="images/mobile/image-gallery-sugarcubes.jpg">
+            <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="sugar cubes">
+          </picture>
+        </div>
+    </div>
   </div>
 
   <!-- Footer starts here -->

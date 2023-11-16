@@ -13,6 +13,7 @@
   .hero {
     height: 100vh;
     padding: 2.5rem;
+    grid:0%;
     background-image: url(images/desktop/image-header.jpg);
     background-position: center;
     background-size: cover;
@@ -233,6 +234,7 @@
   .testimonials {
     padding: 6rem;
     text-align: center;
+    grid:0%;
     background: hsla(42, 92%, 90%, 0.192);
   
     h3 {
@@ -286,6 +288,7 @@
 
   .gallery {
     display: flex;
+    grid:0%;
     align-items: center;
     justify-content: space-between;
     height: 70vh;
@@ -367,6 +370,7 @@
     .attribution {
       font-size: .9rem;
       text-align: center;
+      grid:0%;
       font-family: 'Barlow', sans-serif;
   
       a {
