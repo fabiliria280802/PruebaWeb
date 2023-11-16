@@ -315,18 +315,47 @@ html, body{
 }
 
 .gallery picture img{
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 70%;
 }
 
 
 /* Estilos para el carrusel */
-.carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 60%;
-      margin: auto;
+.carousel {
+    position: relative;
   }
   
+  .carousel-indicators li {
+    background-color: #111010; /* o el color que prefieras */
+  }
+  
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #FE9856;
+  }
+  
+  .carousel-item {
+    text-align: center;
+  }
+  
+  .carousel-item img {
+    width: 50%; 
+    margin: auto;
+    display: block; 
+    max-height: 500px; 
+  }
+  
+  .carousel-control-prev, .carousel-control-next {
+    width: 5%; 
+    background-color: #FE9856;
+  }
+  
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 30px; 
+    width: 40px; 
+  }
 
 /* Footer starts here */
 footer{
