@@ -1,0 +1,506 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    overflow-x: hidden;
+  }
+  
+  // Hero starts here
+  .hero {
+    height: 100vh;
+    padding: 2.5rem;
+    background-image: url(images/desktop/image-header.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  
+    
+    &header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+      .mobile-menu {
+        display: none;
+      }
+  
+      a {
+        text-decoration: none;
+  
+        img {
+          width: 8rem;
+        }
+      }
+  
+      nav {
+        ul {
+          display: flex;
+          align-items: center;
+  
+          li {
+            list-style: none;
+            margin: 0 1.2rem;
+  
+            &:nth-child(4) {
+              margin-right: 0;
+            }
+  
+            a {
+              text-decoration: none;
+              color: hsl(0, 0%, 100%);
+              cursor: pointer;
+              font-family: 'Barlow', sans-serif;
+  
+              &:hover {
+                background: hsla(0, 0%, 100%, 0.37);
+                color: hsl(0, 0%, 100%);
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .header-text {
+      text-align: center;
+  
+      h1 {
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: hsl(0, 0%, 100%);
+        letter-spacing: .5rem;
+        font-weight: 900;
+        margin: 4rem;
+        font-family: 'Fraunces', serif;
+      }
+    }
+  }
+  
+  .mobile-nav {
+    display: none;
+  }
+
+  .features {
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+  
+    article {
+      flex-basis: 100%;
+      height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+  
+      .left-col {
+        flex-basis: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        .left-col-text {
+          max-width: 70%;
+  
+          h2 {
+            font-size: 2.9rem;
+            margin-bottom: 1.5rem;
+            line-height: 1;
+            color: hsl(212, 27%, 19%);
+            font-weight: 900;
+            font-family: 'Fraunces', serif;
+          }
+  
+          p {
+            line-height: 1.4;
+            margin-bottom: 2rem;
+            color: hsl(212, 27%, 19%);
+            font-family: 'Barlow', sans-serif;
+          }
+  
+          a {
+            text-decoration: none;
+            color: hsl(212, 27%, 19%);
+            text-transform: uppercase;
+            font-weight: 800;
+            padding: .5rem;
+            position: relative;
+            cursor: pointer;
+            font-family: 'Fraunces', serif;
+  
+            &::before {
+              content: "";
+              position: absolute;
+              bottom: .3rem;
+              left: 0;
+              width: 100%;
+              height: .7rem;
+              background: hsla(51, 100%, 49%, 0.404);
+              z-index: -1;
+              border-radius: .5rem;
+              transition: .35s;
+            }
+  
+            &:hover::before {
+              background: hsl(51, 100%, 49%);
+            }
+          }
+        }
+      }
+  
+      .right-col {
+        flex-basis: 50%;
+        overflow: hidden;
+        height: 100%;
+  
+        picture {
+          width: 100%;
+          height: 100%;
+  
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+  
+      &:nth-child(2) {
+        .left-col .left-col-text a::before {
+          background: hsla(7, 99%, 70%, 0.493);
+        }
+  
+        .left-col .left-col-text a:hover::before {
+          background: hsl(7, 99%, 70%);
+        }
+      }
+  
+      &:nth-child(3) {
+        .left-col {
+          background-image: url(images/desktop/image-graphic-design.jpg);
+          background-position: center;
+          background-size: center;
+          position: relative;
+  
+          .left-col-text {
+            position: absolute;
+            bottom: 1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            max-width: 45%;
+  
+            h2 {
+              font-size: 2rem;
+              color: hsl(167, 40%, 24%);
+              font-family: 'Fraunces', serif;
+            }
+  
+            p {
+              font-size: .8rem;
+              color: hsl(167, 40%, 24%);
+              font-family: 'Barlow', sans-serif;
+            }
+  
+            &:nth-child(2) {
+              background-image: url(images/desktop/image-photography.jpg);
+              background-position: center;
+              background-size: cover;
+  
+              h3 {
+                font-size: 1.5rem;
+                color: hsl(198, 62%, 26%);
+                margin-bottom: 1rem;
+                font-family: 'Fraunces', serif;
+              }
+  
+              p {
+                font-size: .8rem;
+                color: hsl(198, 62%, 26%);
+                font-family: 'Barlow', sans-serif;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .testimonials {
+    padding: 6rem;
+    text-align: center;
+    background: hsla(42, 92%, 90%, 0.192);
+  
+    h3 {
+      text-transform: uppercase;
+      font-weight: 900;
+      color: hsl(210, 4%, 67%);
+      margin-bottom: 3rem;
+      letter-spacing: .3rem;
+      font-family: 'Fraunces', serif;
+    }
+  
+    .testimonial-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  
+      .testimonial-col {
+        flex-basis: 31%;
+  
+        img {
+          border-radius: 50%;
+          width: 3.5rem;
+          margin-bottom: 2.5rem;
+        }
+  
+        p {
+          color: hsl(198, 62%, 26%);
+          margin-bottom: 2.5rem;
+          line-height: 1.6;
+          font-family: 'Barlow', sans-serif;
+        }
+  
+        .client-name {
+          h4 {
+            font-weight: 900;
+            font-size: 1.1rem;
+            margin-bottom: .5rem;
+            font-family: 'Fraunces', serif;
+          }
+  
+          p {
+            font-size: .8rem;
+            margin-bottom: 0;
+            font-family: 'Barlow', sans-serif;
+          }
+        }
+      }
+    }
+  }
+
+  .gallery {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70vh;
+    overflow: hidden;
+  
+    picture {
+      flex-basis: 33%;
+      height: 100%;
+  
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  footer {
+    padding: 3rem;
+    background: hsl(168, 32%, 55%);
+    text-align: center;
+  
+    nav {
+      a {
+        text-decoration: none;
+  
+        img {
+          filter: invert(1) brightness(0);
+          width: 9rem;
+        }
+      }
+  
+      ul {
+        margin: 2rem 0 4rem;
+  
+        li {
+          display: inline-block;
+          margin: 0 1rem;
+          list-style: none;
+  
+          a {
+            text-decoration: none;
+            color: hsl(167, 40%, 24%);
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: .35s;
+            font-family: 'Barlow', sans-serif;
+  
+            &:hover {
+              color: hsl(0, 0%, 100%);
+            }
+          }
+        }
+      }
+    }
+  
+    > ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      > li {
+        display: inline-block;
+        list-style: none;
+        margin: .7rem;
+  
+        > a {
+          text-decoration: none;
+  
+          img {
+            transition: .25s;
+  
+            &:hover {
+              filter: brightness(0) invert(1);
+            }
+          }
+        }
+      }
+    }
+  
+    .attribution {
+      font-size: .9rem;
+      text-align: center;
+      font-family: 'Barlow', sans-serif;
+  
+      a {
+        font-size: .9rem;
+        color: hsl(228, 45%, 44%);
+        text-decoration: none;
+        color: hsl(167, 40%, 24%);
+        transition: .35s;
+        cursor: pointer;
+  
+        &:hover {
+          color: hsl(0, 0%, 100%);
+        }
+      }
+    }
+  }
+  @media (max-width: 320px) {
+    .hero {
+      .header-text {
+        h1 {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  
+    .features {
+      article {
+        .left-col {
+          .left-col-text {
+            p {
+              font-size: .8rem;
+            }
+  
+            &:nth-child(3) {
+              position: absolute;
+              bottom: .5rem;
+              left: 50%;
+              transform: translateX(-50%);
+              text-align: center;
+              width: 85%;
+              max-width: 80%;
+            }
+          }
+        }
+      }
+    }
+  
+    .testimonials {
+      h3 {
+        font-size: .7rem;
+      }
+  
+      .testimonial-row {
+        .testimonial-col {
+          p {
+            font-size: .8rem;
+          }
+  
+          .client-name {
+            h4 {
+              font-size: .9rem;
+            }
+          }
+        }
+      }
+    }
+  
+    footer {
+      nav {
+        ul {
+          li {
+            a {
+              font-size: .8rem;
+            }
+          }
+        }
+      }
+  
+      .attribution {
+        font-size: .6rem;
+  
+        a {
+          font-size: .6rem;
+        }
+      }
+    }
+  }
+  @media (max-width: 280px) {
+    .hero {
+      .header-text {
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  
+    .features {
+      article {
+        &:nth-child(3) {
+          .left-col {
+            .left-col-text {
+              bottom: -1rem;
+            }
+          }
+        }
+      }
+    }
+  
+    .testimonials {
+      h3 {
+        font-size: .6rem;
+      }
+    }
+  
+    footer {
+      padding: 2rem 1rem;
+  
+      nav {
+        ul {
+          margin: 1.5rem 0 3rem;
+  
+          li {
+            a {
+              font-size: .6rem;
+            }
+          }
+        }
+  
+        a {
+          img {
+            width: 7.5rem;
+          }
+        }
+      }
+    }
+  }
+        
