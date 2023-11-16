@@ -338,6 +338,19 @@ html, body{
   
   .carousel-item {
     text-align: center;
+    position: relative;
+  }
+
+  .carousel-title {
+    position: absolute;
+    top: 0; 
+    width: 100%;
+    font-size: 2em; 
+    color: #FFFFFF; 
+    text-shadow: 2px 2px 4px #fe9956ce;
+    padding: 10px 0; 
+    background: #fe995665; 
+    margin: 0; 
   }
   
   .carousel-item img {
@@ -447,7 +460,17 @@ footer .attribution a:hover{
         background-position: center;
         background-size: cover;
     }
-
+    .carousel-title {
+        position: absolute;
+        top: 0; 
+        width: 100%;
+        font-size: 1.2em; 
+        color: #FFFFFF; 
+        text-shadow: 2px 2px 4px #fe9956ce;
+        padding: 10px 0; 
+        background: #fe995665; 
+        margin: 0; 
+      }
     .hero header nav ul {
         display: none;
     }
@@ -667,7 +690,17 @@ footer .attribution a:hover{
     .hero .header-text h1 {
         font-size: 1.8rem;
     }
-
+    .carousel-title {
+        position: absolute;
+        top: 0; 
+        width: 100%;
+        font-size: 1.2em; 
+        color: #FFFFFF; 
+        text-shadow: 2px 2px 4px #fe9956ce;
+        padding: 10px 0; 
+        background: #fe995665; 
+        margin: 0; 
+      }
     .features article .left-col .left-col-text p {
         font-size: .8rem;
     }
@@ -715,7 +748,17 @@ footer .attribution a:hover{
     .features article:nth-child(3) .left-col .left-col-text {
         bottom: -1rem;
     }
-
+    .carousel-title {
+        position: absolute;
+        top: 0; 
+        width: 100%;
+        font-size: 1.2em; 
+        color: #FFFFFF; 
+        text-shadow: 2px 2px 4px #fe9956ce;
+        padding: 10px 0; 
+        background: #fe995665; 
+        margin: 0; 
+      }
     .testimonials h3 {
         font-size: .6rem;
     }
